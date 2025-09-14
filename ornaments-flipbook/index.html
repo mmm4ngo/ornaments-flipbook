@@ -1,59 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Ornaments of an Empire – Flipbook</title>
-  <style>
-    body {
-      margin: 0;
-      background: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    #flipbook {
-      width: 2398px;   /* match spread width */
-      height: 1500px;  /* match spread height */
-      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    }
-    #flipbook .page {
-      width: 100%;
-      height: 100%;
-    }
-    #flipbook .page img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #870581}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #97007e}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #885d30}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #0d6401}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #000000; min-height: 16.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #b50013}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px '.AppleSystemUIFontMonospaced'; color: #6f5a1e}
+    span.s1 {color: #97007e}
+    span.s2 {color: #6f5a1e}
+    span.s3 {color: #b50013}
+    span.s4 {color: #000000}
+    span.s5 {color: #1400c4}
   </style>
 </head>
 <body>
-
-<div id="flipbook">
-  <!-- Cover (single page size 1193x1500 will auto-center) -->
-  <div class="page"><img src="spreads/cover.jpg" alt="Cover"></div>
-
-  <!-- Spreads (2398x1500) -->
-  <div class="page"><img src="spreads/spread1.jpg" alt="Spread 1"></div>
-  <div class="page"><img src="spreads/spread2.jpg" alt="Spread 2"></div>
-  <div class="page"><img src="spreads/spread3.jpg" alt="Spread 3"></div>
-  <div class="page"><img src="spreads/spread4.jpg" alt="Spread 4"></div>
-</div>
-
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
-<script>
-  $("#flipbook").turn({
-    width: 2398,      // spreads width
-    height: 1500,     // spreads height
-    autoCenter: true,
-    display: 'single', // cover = single, then spreads
-    direction: "ltr"  // horizontal left-to-right flipping
-  });
-</script>
-
+<p class="p1">&lt;!DOCTYPE <span class="s1">html</span>&gt;</p>
+<p class="p2">&lt;html <span class="s2">lang</span>=<span class="s3">"en"</span>&gt;</p>
+<p class="p2">&lt;head&gt;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">  </span></span>&lt;meta <span class="s2">charset</span>=<span class="s3">"UTF-8"</span>&gt;</p>
+<p class="p3"><span class="Apple-converted-space">  </span><span class="s1">&lt;title&gt;</span>Ornaments of an Empire – Flipbook<span class="s1">&lt;/title&gt;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">  </span></span>&lt;style&gt;</p>
+<p class="p3"><span class="Apple-converted-space">    </span><span class="s1">body</span> {</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">margin</span>: <span class="s5">0</span>;</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">      </span></span>background<span class="s4">: </span><span class="s5">#f4f4f4</span><span class="s4">;</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: flex;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">justify-content</span>: center;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">align-items</span>: center;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">height</span>: <span class="s5">100vh</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span>#flipbook<span class="s4"> {</span></p>
+<p class="p5"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s1">width</span><span class="s4">: </span><span class="s5">2398px</span><span class="s4">; <span class="Apple-converted-space">  </span></span>/* match spread width */</p>
+<p class="p5"><span class="s4"><span class="Apple-converted-space">      </span></span><span class="s1">height</span><span class="s4">: </span><span class="s5">1500px</span><span class="s4">;<span class="Apple-converted-space">  </span></span>/* match spread height */</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">box-shadow</span>: <span class="s5">0</span> <span class="s5">8px</span> <span class="s5">20px</span> rgba(<span class="s5">0</span>,<span class="s5">0</span>,<span class="s5">0</span>,<span class="s5">0.25</span>);</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span>#flipbook<span class="s4"> </span>.page<span class="s4"> {</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">width</span>: <span class="s5">100%</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">height</span>: <span class="s5">100%</span>;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span>#flipbook<span class="s4"> </span>.page<span class="s4"> </span><span class="s1">img</span><span class="s4"> {</span></p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">width</span>: <span class="s5">100%</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">height</span>: <span class="s5">100%</span>;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">object-fit</span>: cover;</p>
+<p class="p3"><span class="Apple-converted-space">      </span><span class="s1">display</span>: block;</p>
+<p class="p3"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">  </span></span>&lt;/style&gt;</p>
+<p class="p2">&lt;/head&gt;</p>
+<p class="p2">&lt;body&gt;</p>
+<p class="p6"><br></p>
+<p class="p7"><span class="s1">&lt;div </span><span class="s2">id</span><span class="s1">=</span>"flipbook"<span class="s1">&gt;</span></p>
+<p class="p5"><span class="s4"><span class="Apple-converted-space">  </span></span>&lt;!-- Cover (single page size 1193x1500 will auto-center) --&gt;</p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;div </span><span class="s2">class</span><span class="s1">=</span>"page"<span class="s1">&gt;&lt;img </span><span class="s2">src</span><span class="s1">=</span>"spreads/cover.jpg"<span class="s1"> </span><span class="s2">alt</span><span class="s1">=</span>"Cover"<span class="s1">&gt;&lt;/div&gt;</span></p>
+<p class="p6"><br></p>
+<p class="p5"><span class="s4"><span class="Apple-converted-space">  </span></span>&lt;!-- Spreads (2398x1500) --&gt;</p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;div </span><span class="s2">class</span><span class="s1">=</span>"page"<span class="s1">&gt;&lt;img </span><span class="s2">src</span><span class="s1">=</span>"spreads/spread1.jpg"<span class="s1"> </span><span class="s2">alt</span><span class="s1">=</span>"Spread 1"<span class="s1">&gt;&lt;/div&gt;</span></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;div </span><span class="s2">class</span><span class="s1">=</span>"page"<span class="s1">&gt;&lt;img </span><span class="s2">src</span><span class="s1">=</span>"spreads/spread2.jpg"<span class="s1"> </span><span class="s2">alt</span><span class="s1">=</span>"Spread 2"<span class="s1">&gt;&lt;/div&gt;</span></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;div </span><span class="s2">class</span><span class="s1">=</span>"page"<span class="s1">&gt;&lt;img </span><span class="s2">src</span><span class="s1">=</span>"spreads/spread3.jpg"<span class="s1"> </span><span class="s2">alt</span><span class="s1">=</span>"Spread 3"<span class="s1">&gt;&lt;/div&gt;</span></p>
+<p class="p7"><span class="s4"><span class="Apple-converted-space">  </span></span><span class="s1">&lt;div </span><span class="s2">class</span><span class="s1">=</span>"page"<span class="s1">&gt;&lt;img </span><span class="s2">src</span><span class="s1">=</span>"spreads/spread4.jpg"<span class="s1"> </span><span class="s2">alt</span><span class="s1">=</span>"Spread 4"<span class="s1">&gt;&lt;/div&gt;</span></p>
+<p class="p2">&lt;/div&gt;</p>
+<p class="p6"><br></p>
+<p class="p5">&lt;!-- Scripts --&gt;</p>
+<p class="p7"><span class="s1">&lt;script </span><span class="s2">src</span><span class="s1">=</span>"https://code.jquery.com/jquery-3.6.0.min.js"<span class="s1">&gt;&lt;/script&gt;</span></p>
+<p class="p7"><span class="s1">&lt;script </span><span class="s2">src</span><span class="s1">=</span>"https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"<span class="s1">&gt;&lt;/script&gt;</span></p>
+<p class="p2">&lt;script&gt;</p>
+<p class="p3"><span class="Apple-converted-space">  </span>$(<span class="s3">"#flipbook"</span>).turn({</p>
+<p class="p5"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s2">width</span><span class="s4">: </span><span class="s5">2398</span><span class="s4">,<span class="Apple-converted-space">      </span></span>// spreads width</p>
+<p class="p5"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s2">height</span><span class="s4">: </span><span class="s5">1500</span><span class="s4">, <span class="Apple-converted-space">    </span></span>// spreads height</p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">    </span></span>autoCenter<span class="s4">: </span><span class="s1">true</span><span class="s4">,</span></p>
+<p class="p5"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s2">display</span><span class="s4">: </span><span class="s3">'single'</span><span class="s4">, </span>// cover = single, then spreads</p>
+<p class="p5"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s2">direction</span><span class="s4">: </span><span class="s3">"ltr"</span><span class="s4"><span class="Apple-converted-space">  </span></span>// horizontal left-to-right flipping</p>
+<p class="p3"><span class="Apple-converted-space">  </span>});</p>
+<p class="p2">&lt;/script&gt;</p>
+<p class="p6"><br></p>
+<p class="p2">&lt;/body&gt;</p>
+<p class="p2">&lt;/html&gt;</p>
 </body>
 </html>
